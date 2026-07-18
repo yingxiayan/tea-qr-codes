@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>径山茶 - 茶韵</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'PingFang SC','Microsoft YaHei',sans-serif; background:#faf8f5; }
+.header { background:linear-gradient(135deg,#1a472a,#2d5a3d); color:#fff; padding:25px 20px; text-align:center; }
+.logo { width:60px; height:60px; margin:0 auto 10px; background:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; }
+.header h1 { font-size:28px; margin-bottom:5px; }
+.header p { font-size:14px; opacity:0.85; }
+.video-box { margin:15px; border-radius:12px; overflow:hidden; background:#000; height:200px; }
+.video-box iframe { width:100%; height:100%; }
+.video-hint { background:#fffbe6; border:1px solid #ffe58f; border-radius:8px; padding:12px; margin:0 15px 15px; font-size:13px; color:#856404; text-align:center; }
+.video-hint a { color:#1a472a; font-weight:600; text-decoration:none; }
+.tabs { display:flex; margin:15px; border-bottom:2px solid #1a472a; background:#fff; border-radius:8px 8px 0 0; }
+.tab-btn { flex:1; padding:12px 8px; border:none; background:none; color:#666; font-size:14px; font-weight:500; cursor:pointer; position:relative; }
+.tab-btn.active { color:#1a472a; font-weight:600; }
+.tab-btn.active::after { content:''; position:absolute; bottom:-2px; left:0; right:0; height:2px; background:#1a472a; }
+.content { background:#fff; margin:0 15px 15px; padding:20px; border-radius:0 0 8px 8px; min-height:200px; }
+.section-title { font-size:18px; color:#1a472a; margin-bottom:15px; padding-bottom:8px; border-bottom:2px solid #e8e4db; }
+.step-box { background:#f8faf9; margin:10px 0; padding:15px; border-radius:8px; }
+.step-box h4 { color:#1a472a; margin-bottom:6px; font-size:15px; }
+.step-box p { color:#555; font-size:13px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="header"><div class="logo">🍵</div><h1>径山茶</h1><p>禅茶一味 · 清香幽雅 · 韵味悠长</p></div>
+<div class="video-box"><iframe src="https://player.bilibili.com/player.html?bvid=BV1YMtYzPEEP&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
+<div class="video-hint">📱 如果视频无法播放，请点击 <a href="https://b23.tv/BV1YMtYzPEEP" target="_blank">这里</a> 观看</div>
+<div class="tabs">
+<button class="tab-btn active" onclick="switchTab('m',this)">🍃 制茶工艺</button>
+<button class="tab-btn" onclick="switchTab('b',this)">🫖 泡茶技巧</button>
+<button class="tab-btn" onclick="switchTab('k',this)">📚 茶知识</button>
+</div>
+<div class="content" id="m"><div class="section-title">径山茶制茶工艺</div><div class="step-box"><h4>🌱 采摘</h4><p>径山茶采摘于清明前后，选取一芽一叶或一芽二叶的鲜嫩芽叶，产区海拔较高，云雾缭绕。</p></div><div class="step-box"><h4>💨 萎凋</h4><p>将鲜叶薄摊在通风良好的环境中，进行自然萎凋或轻度萎凋，时间约4-8小时。</p></div><div class="step-box"><h4>🔥 杀青</h4><p>采用高温杀青，温度180-220°C，通过高温快速破坏酶活性，停止发酵。</p></div><div class="step-box"><h4>🫖 揉捻</h4><p>杀青后趁热揉捻，使茶叶卷曲成条索状，揉捻力度适中，避免茶汁过多流失。</p></div><div class="step-box"><h4>🌞 干燥</h4><p>揉捻后进行干燥处理，初烘温度约90°C，复烘温度逐渐降低，固定品质。</p></div></div>
+<div class="content" id="b" style="display:none"><div class="section-title">径山茶泡茶技巧</div><div class="step-box"><h4>🏺 茶具选择</h4><p>适合使用玻璃杯或白瓷茶具，便于观赏茶汤色泽和茶叶形态。</p></div><div class="step-box"><h4>🌡️ 水温控制</h4><p>水温80-85°C为宜，过高会破坏茶叶中的营养成分和香气。</p></div><div class="step-box"><h4>⚖️ 投茶量</h4><p>每200ml水投茶3-4克，可根据个人口味适当调整。</p></div><div class="step-box"><h4>💧 冲泡方法</h4><p>采用中投法，先注水三分之一，放入茶叶，待茶叶舒展后再注满水。</p></div><div class="step-box"><h4>⏱️ 品饮时间</h4><p>第一泡约1-2分钟出汤，可续泡2-3次，每次冲泡时间适当延长。</p></div></div>
+<div class="content" id="k" style="display:none"><div class="section-title">径山茶茶知识</div><div class="step-box"><h4>🧘 禅茶文化</h4><p>径山茶是中国禅茶文化的发源地之一，径山寺的"径山茶宴"是中国茶道的经典代表。</p></div><div class="step-box"><h4>🏔️ 产地特点</h4><p>径山茶产于杭州市余杭区径山镇，产区海拔800米以上，气候温和湿润。</p></div><div class="step-box"><h4>🌸 品质特征</h4><p>径山茶外形条索紧结，色泽绿润；香气清高持久，带有兰花香气；滋味鲜爽回甘。</p></div><div class="step-box"><h4>💪 健康功效</h4><p>径山茶富含茶多酚和咖啡因，具有提神醒脑、消除疲劳、促进消化等功效。</p></div></div>
+<script>function switchTab(id,btn){document.querySelectorAll('.content').forEach(e=>e.style.display='none');document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.getElementById(id).style.display='block';btn.classList.add('active')}</script>
+</body>
+</html>
