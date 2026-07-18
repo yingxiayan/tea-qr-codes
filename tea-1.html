@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>西湖龙井 - 茶韵</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'PingFang SC','Microsoft YaHei',sans-serif; background:#faf8f5; }
+.header { background:linear-gradient(135deg,#1a472a,#2d5a3d); color:#fff; padding:25px 20px; text-align:center; }
+.logo { width:60px; height:60px; margin:0 auto 10px; background:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; }
+.header h1 { font-size:28px; margin-bottom:5px; }
+.header p { font-size:14px; opacity:0.85; }
+.video-box { margin:15px; border-radius:12px; overflow:hidden; background:#000; height:200px; }
+.video-box iframe { width:100%; height:100%; }
+.video-hint { background:#fffbe6; border:1px solid #ffe58f; border-radius:8px; padding:12px; margin:0 15px 15px; font-size:13px; color:#856404; text-align:center; }
+.video-hint a { color:#1a472a; font-weight:600; text-decoration:none; }
+.tabs { display:flex; margin:15px; border-bottom:2px solid #1a472a; background:#fff; border-radius:8px 8px 0 0; }
+.tab-btn { flex:1; padding:12px 8px; border:none; background:none; color:#666; font-size:14px; font-weight:500; cursor:pointer; position:relative; }
+.tab-btn.active { color:#1a472a; font-weight:600; }
+.tab-btn.active::after { content:''; position:absolute; bottom:-2px; left:0; right:0; height:2px; background:#1a472a; }
+.content { background:#fff; margin:0 15px 15px; padding:20px; border-radius:0 0 8px 8px; min-height:200px; }
+.section-title { font-size:18px; color:#1a472a; margin-bottom:15px; padding-bottom:8px; border-bottom:2px solid #e8e4db; }
+.step-box { background:#f8faf9; margin:10px 0; padding:15px; border-radius:8px; }
+.step-box h4 { color:#1a472a; margin-bottom:6px; font-size:15px; }
+.step-box p { color:#555; font-size:13px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="header"><div class="logo">🍵</div><h1>西湖龙井</h1><p>绿茶之王 · 色绿香郁 · 味甘形美</p></div>
+<div class="video-box"><iframe src="https://player.bilibili.com/player.html?bvid=BV1DbfEBHEkx&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
+<div class="video-hint">📱 如果视频无法播放，请点击 <a href="https://b23.tv/BV1DbfEBHEkx" target="_blank">这里</a> 观看</div>
+<div class="tabs">
+<button class="tab-btn active" onclick="switchTab('m',this)">🍃 制茶工艺</button>
+<button class="tab-btn" onclick="switchTab('b',this)">🫖 泡茶技巧</button>
+<button class="tab-btn" onclick="switchTab('k',this)">📚 茶知识</button>
+</div>
+<div class="content" id="m"><div class="section-title">西湖龙井制茶工艺</div><div class="step-box"><h4>🌱 采摘</h4><p>西湖龙井的采摘要求极为严格，通常在清明前后进行。采摘标准为"一芽一叶"或"一芽二叶初展"，芽叶长度约2-3厘米。</p></div><div class="step-box"><h4>💨 摊青</h4><p>将采摘的鲜叶均匀摊放在竹匾上，在通风阴凉处放置4-6小时，散失部分水分，降低叶温，散发青草气。</p></div><div class="step-box"><h4>🔥 杀青</h4><p>这是绿茶制作的关键工序，在200°C左右的铁锅中进行，通过高温破坏鲜叶中的酶活性，防止茶叶变红。</p></div><div class="step-box"><h4>🫖 揉捻</h4><p>杀青后的茶叶趁热进行揉捻，采用"轻-重-轻"的手法，使茶叶卷曲成条索状，破坏细胞壁。</p></div><div class="step-box"><h4>🌞 干燥</h4><p>揉捻后的茶叶进行干燥处理，分为初烘和复烘，最终使茶叶含水量降至5-6%，固定品质。</p></div></div>
+<div class="content" id="b" style="display:none"><div class="section-title">西湖龙井泡茶技巧</div><div class="step-box"><h4>🏺 茶具选择</h4><p>推荐使用玻璃杯或白瓷盖碗，玻璃杯便于观赏龙井"清汤绿叶"的汤色变化。</p></div><div class="step-box"><h4>🌡️ 水温控制</h4><p>西湖龙井嫩芽细嫩，水温不宜过高，建议80-85°C，过高会烫熟芽叶导致汤色变黄。</p></div><div class="step-box"><h4>⚖️ 投茶量</h4><p>一般每200ml水投茶3-5克，可根据个人口味调整，过多会使茶汤过于苦涩。</p></div><div class="step-box"><h4>💧 冲泡方法</h4><p>采用"中投法"：先注入约三分之一的水，放入茶叶，待茶叶舒展后再注满水。</p></div><div class="step-box"><h4>⏱️ 品饮时间</h4><p>第一泡茶约1-2分钟即可出汤，可续泡2-3次，每次出汤后留底汤三分之一。</p></div></div>
+<div class="content" id="k" style="display:none"><div class="section-title">西湖龙井茶知识</div><div class="step-box"><h4>🏛️ 历史渊源</h4><p>西湖龙井历史悠久，始于唐代，盛于宋代。清代乾隆皇帝曾六下江南，多次亲临龙井品茶。</p></div><div class="step-box"><h4>📍 产地范围</h4><p>西湖龙井产于杭州西湖周边的狮峰、龙井、云栖、虎跑、梅家坞等五大核心产区。</p></div><div class="step-box"><h4>✨ 品质特征</h4><p>西湖龙井以"色绿、香郁、味甘、形美"四绝著称，外形扁平挺秀，色泽翠绿有光泽。</p></div><div class="step-box"><h4>💪 健康功效</h4><p>西湖龙井富含茶多酚、氨基酸等营养成分，具有提神醒脑、抗氧化、降脂减肥等功效。</p></div></div>
+<script>function switchTab(id,btn){document.querySelectorAll('.content').forEach(e=>e.style.display='none');document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.getElementById(id).style.display='block';btn.classList.add('active')}</script>
+</body>
+</html>
